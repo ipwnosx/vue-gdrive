@@ -48,7 +48,13 @@
         }
       }
     },
+    watch: {
+      '$gapi.authenticated': 'onChangeAuthenticated'
+    },
     methods: {
+      onChangeAuthenticated () {
+        console.log(this.$gapi.authenticated)
+      },
       login () {
         this.$login()
       },

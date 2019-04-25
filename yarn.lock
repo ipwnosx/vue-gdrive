@@ -6624,9 +6624,9 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-gapi@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/vue-gapi/-/vue-gapi-0.0.10.tgz#aebd8f1c286e444c0ddbff4d192dadc20fbb4aff"
+vue-gapi@uuki/vue-gapi:
+  version "0.1.0"
+  resolved "https://codeload.github.com/uuki/vue-gapi/tar.gz/ff42f349685d7ee74886ba8fd68c6346c54cb5b5"
 
 vue-hot-reload-api@^2.2.0:
   version "2.3.3"
