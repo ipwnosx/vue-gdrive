@@ -1,0 +1,34 @@
+---
+extends:
+  - 'eslint:recommended'
+  - 'plugin:vue/recommended'
+
+parserOptions:
+  sourceType: "module"
+  ecmaVersion: 8
+
+ecmaFeatures:
+  modules: true
+
+rules:
+  indent: [ 1, 2, SwitchCase: 1 ]
+  quotes: [ 1, single ]
+  linebreak-style: [ 1, unix ]
+  semi: [ 0 ]
+  no-undef: [ 1 ]
+  no-console: [ 0 ]
+  no-debug: [ 0 ]
+  no-unused-vars: [ 0 ]
+  space-infix-ops: [ 1 ]
+  no-multi-spaces: [ 1 ]
+  no-fallthrough: [ 0 ]
+  comma-dangle: [ 0 ]
+  'vue/max-attributes-per-line': [ 0 ]
+
+globals:
+  Vue: true
+
+env:
+  es6: true
+  browser: true
+  node: true

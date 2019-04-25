@@ -1,0 +1,70 @@
+{
+  "name": "vue-gdrive",
+  "version": "0.1.0",
+  "description": "Google Drive API CRUD Shortcut Plugin for Vue 2.",
+  "main": "dist/vue-gdrive.js",
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "dev": "webpack-dev-server --config ./scripts/webpack.dev.conf.js --inline --hot --progress",
+    "test": "jest --config test/jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uuki/vue-gdrive.git"
+  },
+  "keywords": [
+    "vue",
+    "drive",
+    "gdrive",
+    "API"
+  ],
+  "author": "uuki <sena.rn68@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.16",
+    "axios": "^0.18.0",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.22.0",
+    "chalk": "^2.4.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "jest": "^23.0.1",
+    "node-sass": "^4.9.0",
+    "ora": "^2.1.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "vue-gapi": "^0.0.10",
+    "vue-loader": "13.3.0",
+    "vue-template-compiler": "2.5.2",
+    "webpack": "^3.6.0",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "engines": {
+    "node": ">= 6.11.0",
+    "yarn": ">= 1.3.2"
+  },
+  "browsers": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "files": [
+    "README.md",
+    "dist",
+    "package.json",
+    "LICENSE"
+  ]
+}
