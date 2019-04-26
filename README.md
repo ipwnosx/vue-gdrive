@@ -11,7 +11,7 @@ Google Drive API CRUD Shortcut Plugin for Vue 2.
 ### Step 1
 
 ```shell
-$ yarn add vue-gdrive
+$ yarn add uuki/vue-gdrive
 ```
 
 ### Step 2
