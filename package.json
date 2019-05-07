@@ -1,7 +1,7 @@
 {
   "name": "vue-gdrive",
   "version": "0.1.0",
-  "description": "Google Drive API CRUD Shortcut Plugin for Vue 2.",
+  "description": "Google Drive API wrapper for Vue 2.",
   "main": "dist/vue-gdrive.js",
   "scripts": {
     "build": "node ./scripts/build.js",

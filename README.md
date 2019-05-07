@@ -4,7 +4,7 @@
 
 ## Overview
 
-Google Drive API CRUD Shortcut Plugin for Vue 2.
+Google Drive API wrapper for Vue 2.
 
 ## Installation
 
