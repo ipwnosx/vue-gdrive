@@ -20,8 +20,9 @@ module.exports = Object.assign({
   },
   devServer: {
     hot: true,
-    host: 'localhost',
+    host: '0.0.0.0',
     port: 6001,
+    disableHostCheck: true,
     open: true,
     overlay: { warnings: false, errors: true }
   },
