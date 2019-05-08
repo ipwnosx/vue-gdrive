@@ -11,6 +11,7 @@ Google Drive API wrapper for Vue 2.
 ### Step 1
 
 ```shell
+$ yarn add uuki/vue-gapi
 $ yarn add uuki/vue-gdrive
 ```
 
@@ -20,19 +21,19 @@ Use [VueGAPI](https://github.com/cedpoilly/vue-gapi) for GAPI authentication.
 
 ```js
 import Vue from 'vue'
+import VueGAPI from 'vue-gapi'
 import VueGDrive from 'vue-gdrive'
 
 /**
  * https://github.com/cedpoilly/vue-gapi
  */
-Vue.use(VueGDrive, {
-  gapi: {
-    apiKey: '<API_KEY>',
-    clientId: '<CLIENT_ID>',
-    discoveryDocs: ['<DISCOVERY_DOCS>'],
-    scope: '<SCOPE>',
-  }
+Vue.use(VueGAPI, {
+  apiKey: '<API_KEY>',
+  clientId: '<CLIENT_ID>',
+  discoveryDocs: ['<DISCOVERY_DOCS>'],
+  scope: '<SCOPE>',
 })
+Vue.use(VueGDrive)
 ```
 
 ## Methods
