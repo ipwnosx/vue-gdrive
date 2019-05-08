@@ -16,8 +16,13 @@ export default {
 
     /**
      * Load API
+     * Depends on another plugin `uuki/vue-gapi`. (https://github.com/uuki/vue-gapi)
      */
-    const gapi = await Vue.prototype.$getGapiClient();
+    const gapi = await Vue.prototype.$getGapiClient()
+                  .catch((e) => {
+                    console.error('vue-gapi is not installed. Please `$yarn add uuki/gapi`', e)
+                    return;
+                  })
 
     _this.gapi = gapi;
     _this.authInstance = _this.gapi.auth2.getAuthInstance();

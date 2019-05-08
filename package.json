@@ -1,6 +1,6 @@
 {
   "name": "vue-gdrive",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Google Drive API wrapper for Vue 2.",
   "main": "dist/vue-gdrive.js",
   "scripts": {
@@ -46,7 +46,6 @@
     "sass-loader": "^7.0.3",
     "style-loader": "^0.19.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
-    "vue-gapi": "uuki/vue-gapi",
     "vue-loader": "13.3.0",
     "vue-template-compiler": "2.5.2",
     "webpack": "^3.6.0",
@@ -66,5 +65,8 @@
     "dist",
     "package.json",
     "LICENSE"
-  ]
+  ],
+  "dependencies": {
+    "vue-gapi": "uuki/vue-gapi"
+  }
 }

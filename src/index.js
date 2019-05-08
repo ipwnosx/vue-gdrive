@@ -8,11 +8,6 @@ import VueGDrive from './gdrive'
  */
 import uploadArea from './directives/upload_area'
 
-/**
- * Plugins
- */
-import VueGAPI from 'vue-gapi'
-
 function plugin (Vue, clientOptions = {}) {
 
   /**
@@ -25,19 +20,7 @@ function plugin (Vue, clientOptions = {}) {
     authInstance: null,
   };
 
-  /**
-   * Defaults
-   * about scopes => https://developers.google.com/drive/api/v3/about-auth
-   */
-  const options = {
-    gapi: {
-      apiKey: '',
-      clientId: '',
-      discoveryDocs: [''],
-      scope: '',
-    },
-    gdrive: {}
-  };
+  const options = {};
 
   Object.assign(options, clientOptions);
 
@@ -49,8 +32,7 @@ function plugin (Vue, clientOptions = {}) {
   /**
    * Add Methods
    */
-  Vue.use(VueGAPI, options.gapi)
-  Vue.use(VueGDrive, options.gdrive)
+  Vue.use(VueGDrive, options)
 
   /**
    * Add Directive
